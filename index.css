@@ -43,6 +43,15 @@ html, body, p {
     border: none;
     border-radius: 5px;
     min-width: 100%;
+    transition: opacity .15s;
+}
+
+.get-scheme-button:hover {
+    opacity: 0.8;
+}
+
+.get-scheme-button:active {
+    opacity: 0.6;
 }
 
 .colors-display {
