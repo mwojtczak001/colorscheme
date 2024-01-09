@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <input type="color" class="color-picker">
+            <label for="schemes"></label>
+            <select id="scheme-select" name="schemes">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome (Dark)</option>
+                <option value="monochrome-light">Monochrome (Light)</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="get-scheme-button">
+                Get Color Scheme
+            </button>
+        </header>
+        <main class="colors-display">
+            <div class="color-0 color-display"></div>
+            <div class="color-1 color-display"></div>           
+            <div class="color-2 color-display"></div>
+            <div class="color-3 color-display"></div>      
+            <div class="color-4 color-display"></div>
+        </main>
+        <footer>
+            <p>Made with <a href="https://www.thecolorapi.com" target="_blank">The Color API</a></p>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,126 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.main-header {
+    background-color: lightblue;
+    background: #EECDA3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    gap: .75rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    justify-content: space-between;
+    
+}
+
+.color-picker {
+    padding: 0;
+    margin: 0;
+    width: 4rem;
+    height: 4rem;
+    background-color: lightgray;
+    border: none;
+    cursor: pointer;
+}
+
+#scheme-select {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.get-scheme-button {
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    min-width: 100%;
+}
+
+.colors-display {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.color-display {
+    border-bottom: 1px solid black;
+    padding: 2.5rem;
+}
+
+.inner-display {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 800;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+}
+
+.copy-notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: gray;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    text-align: center;
+    font-size: .8rem;
+   
+}
+
+footer p {
+    padding-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (min-width: 720px) {
+    .main-header {
+        flex-direction: row; 
+    }
+    
+    .colors-display {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .color-display {
+        height: 100vh;
+        flex: 1;
+        border: none;
+
+    }
+    
+    #scheme-select {
+        max-width: 900px;
+        flex: 1;
+    }
+    
+    .get-scheme-button {
+        min-width: 5rem;
+    }  
+}
+
